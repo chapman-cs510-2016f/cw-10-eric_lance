@@ -43,10 +43,25 @@ static char * test_pass_by_value() {
     return 0;
 }
 
+/* This function tests the pass by reference by creating a VEC2 v
+ * and setting its values with setVec2 then checking the result
+ */
+static char * test_pass_by_reference() {
+    COMP x = 4, y = 2;
+    VEC2 v = {0, 0};
+    setVec2(&v, x, y);
+    mu_assert("error, v.x != 4", is_equal(v.x, x));
+    mu_assert("error, v.y != 2", is_equal(v.y, y));
+    return 0;
+}
+
+
+
 /* all_tests collects a set of tests defined above, and runs them
  */
 static char * all_tests() {
     mu_run_test(test_pass_by_value);
+    mu_run_test(test_pass_by_reference);
     return 0;
 }
 
