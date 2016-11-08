@@ -37,16 +37,6 @@ void print_arrays(int array_size, float* array, long double* memblock, char* foo
 }
 
 
-
-
-
-
-
-
-
-
-
-
 int main(void)
 {
     int array_size = 10;

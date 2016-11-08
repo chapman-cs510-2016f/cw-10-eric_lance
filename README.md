@@ -42,7 +42,7 @@ Complete the following exercises, saving your solutions in the indicated files.
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+The main point of this exercise is to better understand how computer memory is allocated and accessed by C-programs, and how there are different methods to get at that memory space.  For the most part, the mechanics of memory access and pointers are 'hidden' by higher level languages.  While this makes working with memory and data structures much simpler and removes the overhead for a programmer to 'manage' their memory usage, the trade off is that higher level languages are generally slower when manipulating their data.
 
 ## Honor Pledge
 
